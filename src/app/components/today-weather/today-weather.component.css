@@ -1,0 +1,27 @@
+.card {
+    background: #fff;
+    width: 50%;
+    margin: auto;
+    padding: 2%;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    margin-top: 2%;
+    border-radius: 1%;
+}
+
+.card-title p {
+    font-weight: 600;
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.temp {
+    font-size: xx-large;
+}
+
+.temp p {
+    text-transform: capitalize;
+    font-size: x-large;
+}

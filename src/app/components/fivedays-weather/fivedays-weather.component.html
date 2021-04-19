@@ -1,0 +1,24 @@
+<div class="wrapper-class">
+    <mat-accordion *ngIf="weatherObject.length > 0">
+
+        <mat-expansion-panel *ngFor="let weather of weatherObject">
+            <mat-expansion-panel-header>
+                <div class="panel-header">
+                    <p class="date-info">{{weather.dt_txt | date: 'mediumDate'}}</p>
+                    <p>{{cityDetails.name}}, {{cityDetails.country}}</p>
+                    <img [src]="'http://openweathermap.org/img/wn/'+weather.weather[0].icon+'@2x.png'" alt="">
+                    <p class="weather-description">{{weather.weather[0].description}}</p>
+                </div>
+
+            </mat-expansion-panel-header>
+            <div class="weather-content">
+                <div>
+                    <p class="temp">{{weather.main.temp}}&#176;</p>
+                    <p style="text-transform: capitalize;font-size: x-large">{{weather.weather[0].description}}</p>
+                </div>  
+                <img [src]="'http://openweathermap.org/img/wn/'+weather.weather[0].icon+'@2x.png'" alt="">
+                <p style="font-weight: 500;">Wind speed: {{weather.wind.speed}} Km/h</p>
+            </div>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>

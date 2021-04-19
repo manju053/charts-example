@@ -1,0 +1,12 @@
+<div class="card" *ngIf="weatherObject">
+    <div class="card-title">
+        <p>{{weatherObject.name}}, {{weatherObject.sys.country}} Weather</p>
+    </div>
+    <div class="card-body">
+        <div class="temp">{{weatherObject.main.temp}} &#176;
+        <p>{{weatherObject.weather[0].description}}</p>
+
+        </div>
+        <img [src]="'http://openweathermap.org/img/wn/'+weatherObject.weather[0].icon+'@2x.png'" alt="">
+    </div>
+</div>

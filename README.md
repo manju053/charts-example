@@ -25,3 +25,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## What more can be done
+1. We can include feature to auto detect the user location and show weather details
+2. UI can be enhanced
+3. An interceptor can be added to add api key as query parameter for each weather request
