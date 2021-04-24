@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
-import { GlobalService } from 'src/app/services/global.service';
+import { GlobalService } from '../../../services/global.service';
 
 @Component({
   selector: 'app-loader',

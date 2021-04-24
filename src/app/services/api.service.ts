@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { OPEN_WEATHER_API_KEY } from 'src/constants';
+import { OPEN_WEATHER_API_KEY } from '../../constants';
 
 @Injectable({
   providedIn: 'root'
