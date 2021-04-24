@@ -13,13 +13,24 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { LoaderComponent } from './components/shared/loader/loader.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { FormsModule } from '@angular/forms';
+import { ChartsExampleComponent } from './components/charts-example/charts-example.component';
+import { Ng2ChartsExampleComponent } from './components/ng2-charts-example/ng2-charts-example.component';
+import { HighChartsComponent } from './components/high-charts/high-charts/high-charts.component';
+import { HighchartsChartModule } from 'highcharts-angular';
+import { LineChartComponent } from './components/high-charts/line-chart/line-chart.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     TodayWeatherComponent,
     FivedaysWeatherComponent,
-    LoaderComponent
+    LoaderComponent,
+    ChartsExampleComponent,
+    Ng2ChartsExampleComponent,
+    HighChartsComponent,
+    LineChartComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +40,8 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     MatProgressSpinnerModule,
     MatExpansionModule,
-    FormsModule
+    FormsModule,
+    HighchartsChartModule
   ],
   providers: [{provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true}],
   bootstrap: [AppComponent]

@@ -1,5 +1,6 @@
 <div class="main">
-  <app-loader></app-loader>
+  <app-high-charts></app-high-charts>
+  <!-- <app-loader></app-loader>
   <div class="header">
     <h3>Weather in {{selectedCity}}</h3>
     <div class="form-group">
@@ -14,11 +15,17 @@
     </div>
   </div>
   <mat-tab-group>
+    <mat-tab label="Charts">
+      <app-charts-example></app-charts-example>
+    </mat-tab>
+
+
     <mat-tab label="Today"> 
       <app-today-weather [city]="selectedCity"></app-today-weather>  
     </mat-tab>
     <mat-tab label="5-Days"> 
       <app-fivedays-weather  [city]="selectedCity"></app-fivedays-weather> 
     </mat-tab>
-  </mat-tab-group>
+  
+  </mat-tab-group> -->
 </div>
