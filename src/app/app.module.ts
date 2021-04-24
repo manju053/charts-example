@@ -18,6 +18,7 @@ import { Ng2ChartsExampleComponent } from './components/ng2-charts-example/ng2-c
 import { HighChartsComponent } from './components/high-charts/high-charts/high-charts.component';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { LineChartComponent } from './components/high-charts/line-chart/line-chart.component';
+import { AreaChartsComponent } from './components/high-charts/area-charts/area-charts.component';
 
 
 
@@ -30,7 +31,8 @@ import { LineChartComponent } from './components/high-charts/line-chart/line-cha
     ChartsExampleComponent,
     Ng2ChartsExampleComponent,
     HighChartsComponent,
-    LineChartComponent
+    LineChartComponent,
+    AreaChartsComponent
   ],
   imports: [
     BrowserModule,
